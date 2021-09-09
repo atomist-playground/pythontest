@@ -81,7 +81,7 @@ RUN coverage report --fail-under 95
 FROM python-base as production
 ENV FASTAPI_ENV=production
 
-COPY --from=builder-base $VENV_PATH $VENV_PATH
+# COPY --from=builder-base $VENV_PATH $VENV_PATH
 COPY ./docker/gunicorn_conf.py /gunicorn_conf.py
 
 COPY ./docker/docker-entrypoint.sh /docker-entrypoint.sh
