@@ -72,3 +72,4 @@ We could then get a shell inside the container with:
 If you do not specify a target the resulting image will be the last image defined which in our case is the 'production' image.
 
 
+   
